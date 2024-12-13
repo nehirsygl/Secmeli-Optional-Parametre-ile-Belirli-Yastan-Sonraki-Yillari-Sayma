@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp37
+{ /*7. Seçmeli (Optional) Parametre ile Belirli Yaştan Sonraki Yılları Sayma
+
+Soru: Bir yaş değeri alan bir metot yazın. Eğer yaş belirtilmezse varsayılan olarak 18 olsun ve metot, 
+verilen yaşın 18’den ne kadar fazla olduğunu döndürsün.int türünde bir metot tanımlayıp varsayılan parametre kullanarak yaşı hesaplayabilirsiniz.*/
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int fark1 = YasFarki(20);
+            Console.WriteLine("Yaş farkı: " + fark1);
+            int fark2 = YasFarki();
+            Console.WriteLine("Yaş farkı: " + fark2);
+        }
+        static int YasFarki(int yas = 18)
+        {
+            return yas - 18;
+        }
+    }
+}
